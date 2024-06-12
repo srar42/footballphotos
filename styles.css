@@ -1,0 +1,98 @@
+body {
+    font-family: 'Lexend', 'Noto Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #142112;
+    padding: 16px;
+    padding-bottom: 8px;
+    justify-content: space-between;
+}
+
+header h2 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+    flex: 1;
+    padding-left: 48px;
+}
+
+header .search-input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 8px;
+}
+
+header .search-button {
+    display: flex;
+    max-width: 480px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 48px;
+    background: transparent;
+    color: white;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0;
+}
+
+header .search-button svg {
+    fill: currentColor;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 12px;
+    padding: 16px;
+}
+
+.wallpaper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+
+.wallpaper-image {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 9 / 16;
+    border-radius: 12px;
+}
+
+.wallpaper-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #43e52a;
+    color: #142112;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #36c121;
+}
